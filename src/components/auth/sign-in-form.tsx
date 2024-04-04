@@ -34,7 +34,6 @@ const defaultValues = { email: 'johnmurillo758@gmail.com', password: 'password' 
 export function SignInForm(): React.JSX.Element {
   const router = useRouter();
   const { checkSession } = useUser();
-  const [showPassword, setShowPassword] = React.useState<boolean>(false);
   const [isPending, setIsPending] = React.useState<boolean>(false);
   const {
     control,
